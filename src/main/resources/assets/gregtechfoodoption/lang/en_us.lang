@@ -810,6 +810,7 @@ metaitem.food.coffee.energized.name=Energized Coffee Mug
 metaitem.crop.coffee.name=Coffee Cherry
 metaitem.seed.coffee.name=Coffee Seed
 metaitem.component.unfired_mug.name=Unfired Mug
+metaitem.component.plastic_cup.name=Plastic Cup
 
 entity.Snowman.name=Snow Golem
 gregtechfoodoption.potion.snowgolemspawner=Snow-Protected
