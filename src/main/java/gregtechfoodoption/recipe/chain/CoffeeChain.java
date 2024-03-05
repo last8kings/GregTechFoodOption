@@ -33,20 +33,20 @@ public class CoffeeChain {
             JEIGTFOPlugin.itemStacksToHide.add(new ItemStack(InitBlocks.blockCoffeeMachine));
         }
 
-        ItemStack emptyCoffeeCup = GTFOMetaItem.EMPTY_CUP.getStackForm();
+        ItemStack emptyCoffeeMug = GTFOMetaItem.EMPTY_MUG.getStackForm();
         ItemStack coffeeFilter = GTFOMetaItem.PAPER_CONE.getStackForm();
 
         FORMING_PRESS_RECIPES.recipeBuilder()
                 .input(Items.CLAY_BALL, 5)
                 .notConsumable(PAPER_CONE.getStackForm())
-                .outputs(UNFIRED_CUP.getStackForm(2))
+                .outputs(UNFIRED_MUG.getStackForm(2))
                 .EUt(30)
                 .duration(200)
                 .buildAndRegister();
 
         BLAST_RECIPES.recipeBuilder()
-                .inputs(UNFIRED_CUP.getStackForm(16))
-                .outputs(EMPTY_CUP.getStackForm(16))
+                .inputs(UNFIRED_MUG.getStackForm(16))
+                .outputs(EMPTY_MUG.getStackForm(16))
                 .blastFurnaceTemp(1033)
                 .EUt(120)
                 .duration(1200)
@@ -54,16 +54,16 @@ public class CoffeeChain {
 
         CANNER_RECIPES.recipeBuilder()
                 .fluidInputs(GTFOMaterialHandler.Coffee.getFluid(100))
-                .inputs(emptyCoffeeCup)
-                .outputs(GTFOMetaItem.COFFEE_CUP.getStackForm())
+                .inputs(emptyCoffeeMug)
+                .outputs(GTFOMetaItem.COFFEE_MUG.getStackForm())
                 .EUt(40)
                 .duration(20)
                 .buildAndRegister();
 
         CANNER_RECIPES.recipeBuilder()
                 .fluidInputs(GTFOMaterialHandler.EnergizedCoffee.getFluid(100))
-                .inputs(emptyCoffeeCup)
-                .outputs(GTFOMetaItem.ENERGIZING_COFFEE_CUP.getStackForm())
+                .inputs(emptyCoffeeMug)
+                .outputs(GTFOMetaItem.ENERGIZING_COFFEE_MUG.getStackForm())
                 .EUt(40)
                 .duration(20)
                 .buildAndRegister();

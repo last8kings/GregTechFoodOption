@@ -212,8 +212,8 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem GRAHAM_CRACKER;
     public static MetaItem<?>.MetaValueItem COCOA_NIBS;
     public static MetaItem<?>.MetaValueItem COFFEE_CHERRY;
-    public static MetaItem<?>.MetaValueItem ENERGIZING_COFFEE_CUP;
-    public static MetaItem<?>.MetaValueItem COFFEE_CUP;
+    public static MetaItem<?>.MetaValueItem ENERGIZING_COFFEE_MUG;
+    public static MetaItem<?>.MetaValueItem COFFEE_MUG;
     public static MetaItem<?>.MetaValueItem PARACETAMOL_CAPLET;
 
     //juice
@@ -247,8 +247,8 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem GELATIN;
     public static MetaItem<?>.MetaValueItem ROASTED_COCOA_BEANS;
     public static MetaItem<?>.MetaValueItem PAPER_CONE;
-    public static MetaItem<?>.MetaValueItem EMPTY_CUP;
-    public static MetaItem<?>.MetaValueItem UNFIRED_CUP;
+    public static MetaItem<?>.MetaValueItem EMPTY_MUG;
+    public static MetaItem<?>.MetaValueItem UNFIRED_MUG;
     public static MetaItem<?>.MetaValueItem CAPLET_CAP;
     public static MetaItem<?>.MetaValueItem CAPLET_BODY;
     public static MetaItem<?>.MetaValueItem GEL_CAPLET;
@@ -543,10 +543,10 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         GELATIN = addItem(196, "component.gelatin").blacklistKitchen();
         ROASTED_COCOA_BEANS = addItem(197, "component.roasted_beans");
         COCOA_NIBS = addItem(198, "component.cocoa_nibs");
-        EMPTY_CUP = addItem(199, "component.empty_cup").blacklistKitchen();
+        EMPTY_MUG = addItem(199, "component.empty_mug").blacklistKitchen();
         PAPER_CONE = addItem(200, "component.paper_cone").blacklistKitchen();
         COFFEE_CHERRY = addItem(201, "crop.coffee");
-        UNFIRED_CUP = addItem(205, "component.unfired_cup").blacklistKitchen();
+        UNFIRED_MUG = addItem(205, "component.unfired_mug").blacklistKitchen();
 
         KEBAB_KUBIDEH = addItem(136, "component.kebab.kubide");
         KEBAB_BARG = addItem(138, "component.kebab.barg");
@@ -903,11 +903,11 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         MARSHMALLOW = addItem(195, "food.marshmallow").addComponents(new GTFOFoodStats(1, 1f)
                 .nutrients(0f, 0f, 0.5f, 0.5f, 0f));
 
-        COFFEE_CUP = addItem(203, "food.coffee.normal").addComponents(new GTFOFoodStats(8, 0.4f, true, false, EMPTY_CUP.getStackForm(),
+        COFFEE_MUG = addItem(203, "food.coffee.normal").addComponents(new GTFOFoodStats(8, 0.4f, true, false, EMPTY_MUG.getStackForm(),
                 new RandomPotionEffect(MobEffects.REGENERATION, 60, 1, 0),
                 new RandomPotionEffect(MobEffects.SPEED, 1800, 2, 0))
                 .nutrients(0f, 0.5f, 0.5f, 0.5f, 0f));
-        ENERGIZING_COFFEE_CUP = addItem(204, "food.coffee.energized").addComponents(new GTFOFoodStats(8, 0.6f, true, false, EMPTY_CUP.getStackForm(),
+        ENERGIZING_COFFEE_MUG = addItem(204, "food.coffee.energized").addComponents(new GTFOFoodStats(8, 0.6f, true, false, EMPTY_MUG.getStackForm(),
                 new RandomPotionEffect(MobEffects.REGENERATION, 200, 3, 0),
                 new RandomPotionEffect(MobEffects.STRENGTH, 200, 1, 0),
                 new RandomPotionEffect(MobEffects.RESISTANCE, 200, 1, 0),

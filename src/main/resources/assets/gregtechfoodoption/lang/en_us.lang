@@ -804,12 +804,12 @@ gregtech.material.gtfo_cocoa_butter=Cocoa Butter
 gregtech.material.gtfo_molten_dark_chocolate=Molten Dark Chocolate
 gregtech.material.gtfo_molten_milk_chocolate=Molten Milk Chocolate
 metaitem.component.paper_cone.name=Coffee Filter
-metaitem.component.empty_cup.name=Empty Cup
-metaitem.food.coffee.normal.name=Coffee Cup
-metaitem.food.coffee.energized.name=Energized Coffee Cup
+metaitem.component.empty_mug.name=Empty Mug
+metaitem.food.coffee.normal.name=Coffee Mug
+metaitem.food.coffee.energized.name=Energized Coffee Mug
 metaitem.crop.coffee.name=Coffee Cherry
 metaitem.seed.coffee.name=Coffee Seed
-metaitem.component.unfired_cup.name=Unfired Cup
+metaitem.component.unfired_mug.name=Unfired Mug
 
 entity.Snowman.name=Snow Golem
 gregtechfoodoption.potion.snowgolemspawner=Snow-Protected
