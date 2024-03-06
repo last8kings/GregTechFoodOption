@@ -55,6 +55,7 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem CORED_APPLE;
     public static MetaItem<?>.MetaValueItem APPLE_HARD_CANDY;
     public static MetaItem<?>.MetaValueItem PLASTIC_BOTTLE;
+    public static MetaItem<?>.MetaValueItem THAI_TEA;
     public static MetaItem<?>.MetaValueItem SPARKLING_WATER;
     public static MetaItem<?>.MetaValueItem LEMON;
     public static MetaItem<?>.MetaValueItem LIME;
@@ -625,6 +626,10 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
 
         COCONUT = addItem(342, "component.coconut");
         PLASTIC_CUP = addItem(344, "component.plastic_cup").blacklistKitchen();
+        THAI_TEA = addItem(345, "food.thai_tea").addComponents(new GTFOFoodStats(2, 1.5f, true, true, PLASTIC_CUP.getStackForm(),
+                new RandomPotionEffect(MobEffects.SPEED, 2400, 1, 0))
+                .nutrients(1f, 0.1f, 0, 0, 0));
+
 
         POPCORN_BAG = addItem(0, "food.popcorn_bag").addComponents(new GTFOFoodStats(GTFOConfig.gtfoFoodConfig.popcornHunger, GTFOConfig.gtfoFoodConfig.popcornSaturation, false, true, PAPER_BAG.getStackForm(1),
                 new RandomPotionEffect(getPotionById(10), 300, 1, 0))
