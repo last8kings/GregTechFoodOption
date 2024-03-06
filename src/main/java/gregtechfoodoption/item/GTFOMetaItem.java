@@ -56,6 +56,11 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem APPLE_HARD_CANDY;
     public static MetaItem<?>.MetaValueItem PLASTIC_BOTTLE;
     public static MetaItem<?>.MetaValueItem THAI_TEA;
+    public static MetaItem<?>.MetaValueItem THAI_TEA_BOBA;
+    public static MetaItem<?>.MetaValueItem TARO_TEA;
+    public static MetaItem<?>.MetaValueItem TARO_TEA_BOBA;
+    public static MetaItem<?>.MetaValueItem UNCOOKED_BOBA;
+    public static MetaItem<?>.MetaValueItem BOBA;
     public static MetaItem<?>.MetaValueItem SPARKLING_WATER;
     public static MetaItem<?>.MetaValueItem LEMON;
     public static MetaItem<?>.MetaValueItem LIME;
@@ -625,10 +630,24 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         UNCOOKED_SEASONED_PELMENI = addItem(339, "component.pelmeni_uncooked_seasoned");
 
         COCONUT = addItem(342, "component.coconut");
+
         PLASTIC_CUP = addItem(344, "component.plastic_cup").blacklistKitchen();
-        THAI_TEA = addItem(345, "food.thai_tea").addComponents(new GTFOFoodStats(2, 1.5f, true, true, PLASTIC_CUP.getStackForm(),
+        THAI_TEA = addItem(345, "food.tea.thai_tea").addComponents(new GTFOFoodStats(2, 1.5f, true, true, PLASTIC_CUP.getStackForm(),
                 new RandomPotionEffect(MobEffects.SPEED, 2400, 1, 0))
-                .nutrients(1f, 0, 0, 0, 0));
+                .nutrients(2f, 0, 0, 0, 0));
+        THAI_TEA_BOBA = addItem(346, "food.tea.thai_tea_boba").addComponents(new GTFOFoodStats(2, 1.5f, true, true, PLASTIC_CUP.getStackForm(),
+                new RandomPotionEffect(MobEffects.SPEED, 4800, 1, 0))
+                .nutrients(2f, 0, 0, 0, 0.5f));
+        TARO_TEA = addItem(347, "food.tea.taro_tea").addComponents(new GTFOFoodStats(3, 1.5f, true, true, PLASTIC_CUP.getStackForm(),
+                new RandomPotionEffect(MobEffects.RESISTANCE, 2400, 0, 0))
+                .nutrients(1.5f, 0, 0, 0, 0.5f));
+        TARO_TEA_BOBA = addItem(348, "food.tea.taro_tea_boba").addComponents(new GTFOFoodStats(3, 1.5f, true, true, PLASTIC_CUP.getStackForm(),
+                new RandomPotionEffect(MobEffects.RESISTANCE, 4800, 0, 0))
+                .nutrients(1.5f, 0, 0, 0, 0.5f));
+        UNCOOKED_BOBA = addItem(349, "component.uncooked_boba");
+        BOBA = addItem(350, "food.boba").addComponents(new GTFOFoodStats(1, 0.5f, false, true)
+                .nutrients(0, 0, 0, 0, 0.1f));
+
 
 
         POPCORN_BAG = addItem(0, "food.popcorn_bag").addComponents(new GTFOFoodStats(GTFOConfig.gtfoFoodConfig.popcornHunger, GTFOConfig.gtfoFoodConfig.popcornSaturation, false, true, PAPER_BAG.getStackForm(1),

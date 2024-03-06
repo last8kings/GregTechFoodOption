@@ -1196,5 +1196,10 @@ gregtechfoodoption.machine.kitchen.tooltip.3=Place singleblock Machines on the p
 gregtechfoodoption.machine.kitchen.tooltip.4=Any size larger than the Preview up to 15x15 is fine.
 gregtechfoodoption.machine.kitchen.tooltip.5=§4Requires cleaning Products to remain efficient!
 
-metaitem.food.thai_tea.name=Thai Tea
+metaitem.food.tea.thai_tea.name=Thai Tea
+metaitem.food.tea.thai_tea_boba.name=Thai Tea (Boba)
+metaitem.food.tea.taro_tea.name=Taro Tea
+metaitem.food.tea.taro_tea_boba.name=Taro Tea (Boba)
+metaitem.food.boba.name=Boba
 metaitem.component.plastic_cup.name=Plastic Cup
+metaitem.component.uncooked_boba.name=Uncooked Boba
