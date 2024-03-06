@@ -628,7 +628,7 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         PLASTIC_CUP = addItem(344, "component.plastic_cup").blacklistKitchen();
         THAI_TEA = addItem(345, "food.thai_tea").addComponents(new GTFOFoodStats(2, 1.5f, true, true, PLASTIC_CUP.getStackForm(),
                 new RandomPotionEffect(MobEffects.SPEED, 2400, 1, 0))
-                .nutrients(1f, 0.1f, 0, 0, 0));
+                .nutrients(1f, 0, 0, 0, 0));
 
 
         POPCORN_BAG = addItem(0, "food.popcorn_bag").addComponents(new GTFOFoodStats(GTFOConfig.gtfoFoodConfig.popcornHunger, GTFOConfig.gtfoFoodConfig.popcornSaturation, false, true, PAPER_BAG.getStackForm(1),
